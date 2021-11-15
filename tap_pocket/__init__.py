@@ -85,7 +85,7 @@ def sync(config, state, catalog):
 
         offset = 0
         retries = 5
-        page_size = 500
+        page_size = 100
 
         while True:
             args.update({
