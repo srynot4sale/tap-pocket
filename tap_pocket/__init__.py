@@ -107,7 +107,6 @@ def sync(config, state, catalog):
             next_since = page["since"]
 
             items = []
-            print(page)
             ilist = page.get("list", [])
             if isinstance(ilist, dict):
                 ilist = ilist.values()
