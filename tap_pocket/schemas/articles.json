@@ -1,0 +1,65 @@
+{
+  "type": [
+    "null", 
+    "object"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "item_id": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "given_title": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "given_url": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "resolved_title": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "resolved_url": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "status": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "favourite": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "time_added": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "time_updated": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    }
+  }
+}
