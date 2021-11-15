@@ -113,8 +113,10 @@ def sync(config, state, catalog):
 
             for row in ilist:
                 item = {}
-                for k in ["item_id", "given_title", "given_url", "resolved_title", "resolved_url", "status", "favourite", "time_added", "time_updated"]:
+                for k in ["given_title", "given_url", "resolved_title", "resolved_url", "time_added", "time_updated"]:
                     item[k] = row.get(k, None)
+                for k in ["item_id", "status", "favourite"]:
+                    item[k] = int(row.get(k, 0))
                 items.append(item)
 
             if len(items):
